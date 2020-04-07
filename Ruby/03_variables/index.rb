@@ -66,4 +66,9 @@ puts nil # undefined
 puts self # the receiver now is the main object puts === main.puts
 puts true
 puts false
+puts
+
+
+
+
 
