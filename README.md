@@ -11,7 +11,8 @@ sudo apt-get update
 sudo apt-get install rvm
 echo 'source "/etc/profile.d/rvm.sh"' >> ~/.zshrc # or ~/.bashrc
 # reboot the machine here
-rvm install ruby
+rvm install ruby-2.6 # install ruby here
+ruby -v # test install
 ```
 
 
