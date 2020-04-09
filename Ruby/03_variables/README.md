@@ -1,3 +1,7 @@
+### Philosopy
+- Everything in Ruby is an object
+- The variable is actually a reference to an object
+
 ### Types of Varaibles
 - **local** variables: `a`
 - **global** variables: `$a`
@@ -12,6 +16,14 @@
     - **outside** `class or module`: **main**
     - **inside** `class or module`: **class or module**
     - **within** a `function`: the **receiver** of function: `receiver.func_name()`
+
+
+### Number
+```ruby
+# number has a class in ruby
+p 1.class
+p 1.2.class
+```
 
 ### Interpolation
 ```ruby

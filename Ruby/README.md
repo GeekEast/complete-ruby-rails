@@ -25,8 +25,31 @@ ruby -v # test install
 - Rufo - Ruby formatter
 - Auto Add Brackets in String Interpolation
 
+### Common Commands
+- interactive mode
+```sh
+irb # get into interactive mode
+```
+- methods
+```ruby
+"123".length # return 3
+"xxx".upcase # return XXX
+"XXX".downcase # return xxx
+"1".to_i # return integer as 1
+"abc".inspect # equal to p "abc"
+1.odd? # check the integer is odd or not
+1.even? # check the integer i even or not
+1.next # return 2
+1.class # got the blueprint of a variable
+
+gets # get user input
+gets.chomp # get user input and remove space in both sides
+```
+
 ### Manage Credentials
 - [GA](https://www.rubyguides.com/2019/01/ruby-environment-variables/)
 
 ### Reference
 - [Install RVM on Ubuntu](https://github.com/rvm/ubuntu_rvm)
+
+
