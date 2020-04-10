@@ -44,7 +44,15 @@ irb # get into interactive mode
 
 gets # get user input
 gets.chomp # get user input and remove space in both sides
+[1,2,3].is_a? Array # class check, support superclass check
 ```
+
+### Wired === 
+- Different implementation with different class
+```ruby
+p (1..3) === 2 # 2 is in range (1..3)
+```
+
 
 ### Manage Credentials
 - [GA](https://www.rubyguides.com/2019/01/ruby-environment-variables/)

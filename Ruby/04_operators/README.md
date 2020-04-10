@@ -1,4 +1,5 @@
 ### Equal
+- content check: `p 1 == 2`
 - num as result: `p 1 <=> 2`
 - include check: `p (1...10) === 5`
 - type && value check: `p 1.eql?(1.0)`

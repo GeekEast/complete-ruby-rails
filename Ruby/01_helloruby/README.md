@@ -29,6 +29,7 @@ a = {
 ```ruby
 a = (1..3)  # 1, 2, 3
 a = (1...3) # 1, 2
+a = "A".."Z" # from A to Z
 ```
 
 ### Pass multple-line string to a function
