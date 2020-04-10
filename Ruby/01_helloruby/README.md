@@ -39,12 +39,6 @@ print <<EOF
 EOF
 ```
 
-### BEGIN && END
-```ruby
-BEGIN {} # run before others
-END {} # run after other
-```
-
 ### Long Comments
 ```ruby
 =begin

@@ -1,3 +1,5 @@
+
+#  while loop
 x = 1
 LIMIT = 10
 while x <= LIMIT do
@@ -6,10 +8,18 @@ while x <= LIMIT do
 end
 
 
-
 x=1
 LIMIT=10
 until x > LIMIT do
     puts "increasing #{x}"
     x += 1
+end
+
+
+# for loop
+for i in 0..5
+    if i < 2 then
+        next # continue in ruby 
+     end
+     puts "Value of local variable is #{i}"
 end
