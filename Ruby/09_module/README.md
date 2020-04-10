@@ -40,6 +40,7 @@ o1.log
 
 ### Mixin
 - `include` 
+- deconstruct module to be part of a class
 ```ruby
 $LOAD_PATH << '.'
 require 'trig.rb'
@@ -53,6 +54,5 @@ end
 
 o1 = Test.new
 o1.log
-
 ```
 
