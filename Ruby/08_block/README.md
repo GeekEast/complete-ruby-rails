@@ -16,6 +16,18 @@ end
 # you can pass arguments from function into the external statement!
 test { |i| puts "What? #{i}"}
 ```
+- Long Statement
+```ruby
+def test
+    for i in (0..4)
+        yield i
+    end
+end
+test do |i|
+    p i
+    p i+1
+end
+```
 
 - Another way to call statement in function
 ```ruby

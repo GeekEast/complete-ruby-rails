@@ -22,3 +22,40 @@ def test(a, &block)  # def test
 end                # end
 test {puts 'hello world'}
 
+
+def test
+    for i in (0..4)
+        yield i
+    end
+end
+test do |i|
+    p i
+    p i+1
+end
+
+
+(0..10).each { |x| puts x }
+
+for i in 1..10
+    puts i
+end
+
+puts i
+
+while i<10 do
+    i += 1
+end 
+
+puts i
+
+
+5.times { |number| puts "#{number}"}
+
+5.times do |number|
+    square = number * number
+    puts square
+end
+
+
+
+
