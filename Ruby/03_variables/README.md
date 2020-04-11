@@ -17,6 +17,12 @@
     - **inside** `class or module`: **class or module**
     - **within** a `function`: the **receiver** of function: `receiver.func_name()`
 
+### Symbol
+- Just light-weight String, and immutable
+- very commonly used as hash-key, because they take less memory
+```ruby
+p :name.class
+```
 
 ### Number
 ```ruby

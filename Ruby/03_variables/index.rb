@@ -29,7 +29,8 @@ puts
 
 # class variables = static variables in Java, scope to class, shared among instances of that class
 # class variables must be initialized
-puts 'testing class varaibles...'
+puts "testing class varaibles..."
+
 class Provider
   @@no_of_provs = 0
   def self.display_no # self refers to Provider, Provider.display_no: Provider is the receiver, display_no is the sender
@@ -40,13 +41,13 @@ class Provider
     @@no_of_provs += 1
   end
 end
+
 Provider.display_no() # class method
 p1 = Provider.new()
 p1.add_no()
 # p1.display_no() instance have no access to class method
 Provider.display_no() # class method
-puts 
-
+puts
 
 # local variables: scope to class,module,def and {}
 puts "in the above example, local variables are id,name and addr"
@@ -59,7 +60,7 @@ puts UNIT
 puts
 
 # predefined variables: cannot be changed
-puts 'testing pseudo variables...'
+puts "testing pseudo variables..."
 puts __FILE__ # the path of the file
 puts __LINE__ # The line of the code
 puts nil # undefined
@@ -68,7 +69,4 @@ puts true
 puts false
 puts
 
-
-
-
-
+p :name.class

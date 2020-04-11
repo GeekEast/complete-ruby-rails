@@ -7,13 +7,11 @@ def log(a, b = 1)
 end
 ```
 
-
 ### Use
 ```ruby
 log('hello world')
 log 'hello world'
 ```
-
 
 ### flexible arguments
 ```ruby
@@ -22,4 +20,10 @@ def log(*numbers)
 end
 
 sum 1,2,3,4,5
+```
+
+### Available Methods
+```ruby
+x = [1,2,3]
+p x.methods
 ```
