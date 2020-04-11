@@ -109,7 +109,7 @@ some_proc.call(1,2,3) # no error
 some_lambda = lambda { |x,y| puts }
 some_lambda.call(1,2,3) # throw error
 ```
-- `return` works totally different in `proc` and `lambda`
+- `return` works totally different in `proc` and `lambda`, Don' use `return` inside `proc`
 ```ruby
 def diet
   status = lambda { return "x" } 
@@ -129,4 +129,3 @@ def die_normal
   "y"
 end
 ```
-> Don' use `return` inside `proc`

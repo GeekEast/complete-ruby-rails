@@ -1,18 +1,5 @@
-def diet
-  status = lambda { return "x" }
-  status.call
-  "y"
-end
+squares_proc = Proc.new { |n| n ** 2 }
+p [1, 2, 3].map(&squares_proc)
 
-p diet
-
-status = lambda { return "x" }
-
-status = Proc.new { "x" }
-
-def die(&status)
-  status.call
-  "y"
-end
-
-p die(&status)
+squares_lambda = lambda { |n| n ** 2 }
+p [1, 2, 3].map(&squares_lambda)
