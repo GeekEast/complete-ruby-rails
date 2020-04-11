@@ -13,3 +13,13 @@ end
 log('hello world')
 log 'hello world'
 ```
+
+
+### flexible arguments
+```ruby
+def log(*numbers)
+    numbers.each { |n| p n }
+end
+
+sum 1,2,3,4,5
+```

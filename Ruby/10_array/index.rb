@@ -115,3 +115,56 @@ p b <=> a # -1
 p a <=> c # 0
 
 p (1..5).to_a
+
+
+
+p [1,2,false].reverse!
+
+arr = [1,3,2,4]
+asc = arr.sort # 1,2,3,4
+desc1 = arr.sort { |a,b| b <=> a }
+desc2 = arr.sort.reverse
+
+p arr
+p asc
+p desc1
+p desc2
+
+
+x = [1,2,3]
+y = x + [4,5]
+p y
+
+x = [1,2,3]
+x.concat [4,5]
+p x 
+
+
+x = [1,2,3]
+p x.max
+p x
+
+p [[],[1,2],[1,2,3]].min_by { |sa| sa.length }
+
+
+x = [1,2,3,4,5]
+p x.index(2)
+p x.find_index(2)
+
+
+numbers = [1,2,2,3,3,4,4,5]
+a = numbers.reject { |x| x > 2 }
+p numbers
+p a 
+
+
+x = [1,2,3]
+a,b,c = x;
+
+p a 
+p b
+p c
+
+
+arr = [1,2,3,4,5,6,7]
+p arr.partition { |n| n == 4}

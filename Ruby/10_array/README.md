@@ -161,3 +161,80 @@ p [1,2,3].is_a? Array # a doesn't represent array here
 ```ruby
 p (1..5).to_a
 ```
+
+
+### Reverse
+```ruby
+res = [1,2,3].reverse # out-place opeartion
+[1,2,3].reverse! # in-place opeartion
+```
+
+### Sort
+- out-place operation
+```ruby
+arr = [1,3,2,4]
+asc = arr.sort # 1,2,3,4
+desc1 = arr.sort { |a,b| b <=> a }
+desc2 = arr.sort.reverse
+
+p arr
+p asc
+p desc1
+p desc2
+```
+
+### Concat
+```ruby
+p [1,2,3] + [4,5] # out-place
+p [1,2,3].concat [4,5] # in-place
+```
+
+
+### Max && Min
+- out-place
+```ruby
+[1,2,3].max
+p [[],[1,2],[1,2,3]].max_by { |sa| sa.length }
+[1,2,3].min
+p [[],[1,2],[1,2,3]].min_by { |sa| sa.length }
+```
+
+### Find
+```ruby
+x = [1,2,3,4,5]
+p x.index(2)
+p x.find_index(2)
+```
+
+
+### Filtering
+- out-place
+```ruby
+numbers = [1,2,2,3,3,4,4,5]
+a = numbers.select { |x| x > 2 }
+p numbers
+p a 
+```
+- the reverse of select
+```ruby
+numbers = [1,2,2,3,3,4,4,5]
+a = numbers.reject { |x| x > 2 }
+p numbers
+p a 
+```
+
+### Unpack
+- for multi-dimension array
+```ruby
+x = [1,2,3]
+a,b,c = x;
+```
+
+### Partition
+- does not support `<=>`
+```ruby
+arr = [1,2,3,4,5,6,7]
+p arr.partition { |n| n == 4}
+```
+
+

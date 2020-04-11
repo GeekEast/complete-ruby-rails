@@ -23,3 +23,12 @@ for i in 0..5
      end
      puts "Value of local variable is #{i}"
 end
+
+
+
+arr =  [1,2,3]
+
+arr.each_with_index do |a, b|
+    p a
+    p b
+end

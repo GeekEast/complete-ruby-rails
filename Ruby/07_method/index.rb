@@ -5,3 +5,12 @@ def log(a, b = 1)
 end
 
 log 'hello'
+
+
+
+
+def log(*numbers)
+    numbers.each { |n| p n }
+end
+
+sum 1,2,3,4,5
