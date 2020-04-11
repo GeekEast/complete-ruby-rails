@@ -200,10 +200,17 @@ p [[],[1,2],[1,2,3]].min_by { |sa| sa.length }
 ```
 
 ### Find
+- find the index
 ```ruby
 x = [1,2,3,4,5]
 p x.index(2)
 p x.find_index(2)
+```
+- find the first item
+```ruby
+x = [1,2,3,4] 
+p x.find { |x| x == 2 }
+p x.detect { |x| x == 3}
 ```
 
 
@@ -238,3 +245,64 @@ p arr.partition { |n| n == 4}
 ```
 
 
+### any && all
+- any
+```ruby
+[1,2,3,4,5].any? do |x|
+    x > 3
+end
+```
+- all
+```ruby
+[1,2,3,4,5].all? do |x|
+    x > 0 
+end
+```
+
+### Unique
+```ruby
+a = [1,2,2,3,3,4]
+p a .uniq
+p a
+a.uniq!
+p a # in-place
+```
+
+### Compact
+- only remove `nil`
+```ruby
+p [1,2,3,0, nil,nil].compact # out-place
+```
+
+### Reduce
+- reduce
+```ruby
+p [1,2,3].reduce(:+)   # sum start as 0
+p [1,2,3].reduce(1,:+) # sum start as 1
+```
+- inject
+```ruby
+p [1,2,3].inject { |sum,n| sum += n}
+p [1,2,3].inject(1) { |sum,n| sum += n }
+```
+
+
+### Flatten
+```ruby
+p  [1,[2,3,[4,5,[6]]]].flatten # [1,2,3,4,5,6]
+```
+
+### Zip
+- vertical operation
+```ruby
+a = [1,2,3]
+b = [4,5,6]
+p a.zip b # [[1,4],[2,5],[3,6]]
+```
+
+### Intersection && Unin && Complementary
+```ruby
+p [1,2,3] & [2,2] # 2, no dups
+p [1,2,3,4] | [3,4,5,6] # 123456, no dups
+p [1,2,3,4,5,5] - [2,3,4] # 1,5,5. allow for dups
+```

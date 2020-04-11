@@ -168,3 +168,56 @@ p c
 
 arr = [1,2,3,4,5,6,7]
 p arr.partition { |n| n == 4}
+
+
+
+x = [1,2,3,4] 
+p x.find { |x| x = 2 }
+x = [1,2,3,4] 
+p x.detect { |i| i == 2 || i == 3 }
+
+
+x.find do |i|
+    res = i == 2 || i == 3
+    p res
+    res
+end
+# p x.detect { |x| x == 3}
+
+
+a = [1,2,2,3,3,4]
+p a .uniq
+p a
+
+p [1,2,3,0, nil,nil].compact
+
+
+
+p [1,2,3].reduce(:+)
+p [1,2,3].reduce(1,:+)
+
+
+p [1,2,3].inject { |sum,n| sum += n}
+p [1,2,3].inject(1) { |sum,n| sum += n }
+
+
+p  [1,[2,3,[4,5,[6]]]].flatten
+
+a = [1,2,3]
+b = [4,5,6]
+p a.zip b
+
+
+p [1,2,3,2] & [2]
+p [1,2,3,4] | [3,4,5,6]
+
+
+
+p [1,2,3] * 2
+p [1,2,3] * "a"
+
+
+p [1,2,3,4,5] - [2,3,4]
+
+
+p [1,2,3,4,5,5] - [2,3,4]

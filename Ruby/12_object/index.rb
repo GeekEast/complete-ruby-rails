@@ -21,5 +21,3 @@ p a.eql?(b)
 p a.equal?(b)
 
 
-
-
