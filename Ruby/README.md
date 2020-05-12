@@ -16,7 +16,7 @@ ruby -v # test install
 ```
 
 ### Install Ruby on Mac
-- Don't use Ruby and Rails on Mac, **aweful!**
+- Using RVM
 
 ### Where to find lib?
 - [Ruby Gems](https://rubygems.org/)
@@ -25,7 +25,7 @@ ruby -v # test install
 - Ruby
 - Ruby Solargraph
 - VScode Ruby
-- Rufo - Ruby formatter
+- Rufo - Ruby formatter (need configuration to RVM)
 - Auto Add Brackets in String Interpolation
 
 ### Common Commands
