@@ -16,26 +16,7 @@ ruby -v # test install
 ```
 
 ### Install Ruby on Mac
-- Using brew
-```sh
-brew install ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-```
-- Using RVM
-  - GPG
-    - Install GPG: `brew install gpg`
-    - Config [GPG](https://rvm.io/rvm/security#install-our-keys): `gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB` 
-  - RVM & GEM
-    - Install [RVM](https://rvm.io/): `curl -sSL https://get.rvm.io | bash -s stable --rails` then test using `rvm help`
-    - Update GEM: `gem update --system` & `gem update`
-    - Inspect GEM: `rvm gemset list`
-    - Global GEM: `rvm gemset use global` || `rvm @global do gem install jist`
-    - Necessary GEM: 
-      - `gem install bundler`: bundle install gem defined in gemfile
-      - `gem install nokogiri`: common but powerful library
-  - Rails
-    - Install `gem install rails`
+- Don't use Ruby and Rails on Mac, **aweful!**
 
 ### Where to find lib?
 - [Ruby Gems](https://rubygems.org/)

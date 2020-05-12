@@ -2,8 +2,9 @@
 - Install Ruby
 - Install Rails
 
-### BTW
+### Tricks
 - append string to file
 ```sh
 echo 'source "/etc/profile.d/rvm.sh"' >> ~/.zshrc
+source ~/.zshrc
 ```
