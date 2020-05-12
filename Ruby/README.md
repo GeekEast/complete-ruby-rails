@@ -15,6 +15,14 @@ rvm install ruby-2.6 # install ruby here
 ruby -v # test install
 ```
 
+### Install Ruby on Mac
+- Using brew
+```sh
+brew install ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+```
+
 ### Where to find lib?
 - [Ruby Gems](https://rubygems.org/)
 
