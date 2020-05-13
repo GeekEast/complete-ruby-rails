@@ -10,4 +10,11 @@ defe = {
   f: 6,
 }
 
+dasd = {
+  "x" => 1,
+  "y" => 2
+}
+
 p abc.merge(defe)
+
+p dasd
