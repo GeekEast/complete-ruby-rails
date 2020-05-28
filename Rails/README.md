@@ -1,25 +1,4 @@
-## Install
-```sh
-gem install rails -v "~>5.2"
-```
-
-### Uninstall Rails Completely
-```sh
-gem uninstall rails
-gem uninstall railties
-```
-
-
 ## Active Record Query Interface
-
-
-
-
-
-
-
-
-
 ### Single Record
 #### find
 - throw error if not found
