@@ -1,13 +1,6 @@
 ### Where to find lib?
 - [Ruby Gems](https://rubygems.org/)
 
-### VScode extensions
-- Ruby
-- Ruby Solargraph
-- VScode Ruby
-- Rufo - Ruby formatter (need configuration to RVM)
-- Auto Add Brackets in String Interpolation
-
 ### Common Commands
 - interactive mode
 ```sh
@@ -36,15 +29,10 @@ gets.chomp # get user input and remove space in both sides
 p (1..3) === 2 # 2 is in range (1..3)
 ```
 
-### Code Reuse
-- When you finish a complex code, try to `extract` it to a `simple name`
-- When you finish a complex code, try to make it more `flexible` by passing `variables` and `lambda functions` (or Proc)
-
-
-### Manage Credentials
-- [GA](https://www.rubyguides.com/2019/01/ruby-environment-variables/)
-
-### Reference
-- [Install RVM on Ubuntu](https://github.com/rvm/ubuntu_rvm)
+### Self
+- the **current context object**
+    - **outside** `class or module`: **main**
+    - **inside** `class or module`: **class or module**
+    - **within** a `function`: the **receiver** of function: `receiver.func_name()`
 
 
