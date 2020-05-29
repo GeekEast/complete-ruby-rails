@@ -49,3 +49,7 @@ rm -rf ~/.rvm
 # ~/.bash_profile
 # ~/.profile
 ```
+
+
+## Reference
+- [ruby基础教程](https://www.kancloud.cn/imxieke/ruby-base/107295)
