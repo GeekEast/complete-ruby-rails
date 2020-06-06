@@ -16,6 +16,27 @@ rails new todolist -T --api --database=postgresql
 - Heroku
 
 
+## Concepts
+### [Partials](https://riptutorial.com/ruby-on-rails/example/2875/partials)
+- purpose: code reuse of erb
+- start with `_`: `_form.html.erb`
+```erb
+<!-- render _form.html.erb -->
+<%= render 'form', article: @article %>
+```
+### [Flash](https://www.rubyguides.com/2019/11/rails-flash-messages/)
+- purpose: pass message from `controller` to `view`
+- prerequisite: config `views/layouts/application.html.erb`
+```ruby
+<% flash.each do |type, msg| %>
+  <div class="alert alert-info">
+    <%= msg %>
+  </div>
+<% end %>
+```
+
+## References
+- [Rails Cheatsheet](https://gist.github.com/mdang/95b4f54cadf12e7e0415)
 
 
 

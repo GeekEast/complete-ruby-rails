@@ -33,3 +33,5 @@
 
 ## References
 - [Rails Naming Convention](https://gist.github.com/iangreenleaf/b206d09c587e8fc6399e)
+- [Rails Style Guide](https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md)
+- [Rails Best Practice](https://rails-bestpractices.com/)

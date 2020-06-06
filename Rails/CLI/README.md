@@ -87,6 +87,35 @@ create      app/views/accounts/_account.json.jbuilder
 create      app/assets/stylesheets/accounts.scss
 create      app/assets/stylesheets/scaffolds.scss
 ```
+
+### Migrations
+- `rails g migration create_media_join_table`
+- [Migration Example](https://guides.rubyonrails.org/active_record_migrations.html#creating-a-table)
+```ruby
+# Only an example
+class CreateMedaiJoinTable < ActiveRecord::Migration[6.0]
+  def change
+    create_table :articles do |t|
+      t.string :title
+      t.string :description
+
+      t.timestamps
+    end
+  end
+end
+```
+- `rails db:migrate`
+  - **add_column**: won't delete existing records
+  - **remove_column**: won't delete existing records
+- `rails db:rollback`
+
+> Just like `git commit`, each change of database table should be kept **small** and in **single** migration file
+
+- After changes to database, you need to apply to **views** as well (No need to change model)
+  - `views/_[name].json.jbuilder`
+  - `vieiws/_form.html.erb`
+  - `views/index.html.erb`
+  - `views/show.html.erb`
 ## Destroy
 - `rails d model account`
 - `rails d controller account`
