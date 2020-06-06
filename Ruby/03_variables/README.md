@@ -18,7 +18,7 @@
     - **within** a `function`: the **receiver** of function: `receiver.func_name()`
 
 ### Symbol
-- Just light-weight, immutable placeholder, not variable
+- Just light-weight, immutable placeholder, like a string
 - very commonly used as hash-key, because they take less memory
 ```ruby
 p :name.class

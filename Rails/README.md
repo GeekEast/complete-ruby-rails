@@ -18,15 +18,18 @@ rails new todolist -T --api --database=postgresql
 
 ## Concepts
 ### [Partials](https://riptutorial.com/ruby-on-rails/example/2875/partials)
-- purpose: code reuse of erb
+- **purpose**: code reuse of erb
 - start with `_`: `_form.html.erb`
 ```erb
 <!-- render _form.html.erb -->
 <%= render 'form', article: @article %>
 ```
 ### [Flash](https://www.rubyguides.com/2019/11/rails-flash-messages/)
-- purpose: pass message from `controller` to `view`
-- prerequisite: config `views/layouts/application.html.erb`
+- **purpose**: display message for user to know about process
+  - notice: something successful
+  - alert: something wrong
+- **Important**: will only be displayed **once**
+- **prerequisite**: config `views/layouts/application.html.erb`
 ```ruby
 <% flash.each do |type, msg| %>
   <div class="alert alert-info">

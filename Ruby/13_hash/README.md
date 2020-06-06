@@ -20,7 +20,7 @@ p person [1]
 ```
 
 ### Symbol
-- Just light-weight String, and Immutable
+- Just light-weight, immutable placeholder, like a string
 - very commonly used as hash-key, because they take less memory
 ```ruby
 p :name.class # symbol
