@@ -1,3 +1,4 @@
+> Just like `git commit`, each change of database table should be kept **small** and in **single** migration file
 ## change
 - method you can use within `change` method
 ```

@@ -9,3 +9,6 @@ container_commands:
         command: "db migrate"
 ```
 - [Where should migrations be run on elasticbeanstalk deployment process?](https://serverfault.com/questions/773059/where-should-migrations-be-run-on-elasticbeanstalk-deployment-process)
+### Other Options
+- Github
+- Heroku

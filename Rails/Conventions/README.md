@@ -1,4 +1,3 @@
-## Without Model
 
 <p align="center"><img style="display: block; width: 600px; margin: 0 auto;" src=img/2020-06-06-16-48-39.png alt="no image found"></p>
 
@@ -32,15 +31,8 @@
   - `delete`
 
 ### Migration
-- `rails g migration AddUserToUploads user:references`
-```ruby
-class AddUserToUploads < ActiveRecord::Migration
-  def change
-    add_reference :uploads, :user, index: true
-  end
-end
-```
-
+- **CamelCase**, **singular** or **plural** depends
+  - `rails g migration CreateProducts`
 ## References
 - [Rails Naming Convention](https://gist.github.com/iangreenleaf/b206d09c587e8fc6399e)
 - [Rails Style Guide](https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md)

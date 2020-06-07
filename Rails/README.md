@@ -3,21 +3,14 @@
 ```sh
 rails new todolist -T --api --database=postgresql
 ```
-## Structure
-- Model: validation, relationships
-- Controller: `index`, `show`, `new`, `create`, `edit`, `update`, `delete`
-- View: HTML, CSS
-- Route: url -> controller
-## Shortcut
-- Insert `<% %>`: `Shift + Command + .`
 
-## Git
-- **Throw current changes**: `git checkout -f`
-
-
-## Deploy
-- Github
-- Heroku
+## Workflow!
+- **Migration**: Database level tables, relations, validation
+- **Model**: API level validation, relations
+- **Controller**: `index`, `show`, `new`, `create`, `edit`, `update`, `delete`
+- **Serializer**: json builder
+- **Route**: url -> controller
+- **View**: html, css
 
 
 ## Concepts
@@ -53,6 +46,13 @@ rails new todolist -T --api --database=postgresql
 ### [Helper](https://stackoverflow.com/questions/27793693/ruby-on-rails-helpers#answer-27793808)
 - Only used for views
 - Extract some logic or data from views
+
+
+## Others
+### RubyMine Shortcut
+- Insert `<% %>`: `Shift + Command + .`
+### Git
+- **Throw current changes**: `git checkout -f`
 
 ## References
 - [Rails Cheatsheet](https://gist.github.com/mdang/95b4f54cadf12e7e0415)
