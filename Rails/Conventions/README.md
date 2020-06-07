@@ -31,6 +31,16 @@
   - `update`
   - `delete`
 
+### Migration
+- `rails g migration AddUserToUploads user:references`
+```ruby
+class AddUserToUploads < ActiveRecord::Migration
+  def change
+    add_reference :uploads, :user, index: true
+  end
+end
+```
+
 ## References
 - [Rails Naming Convention](https://gist.github.com/iangreenleaf/b206d09c587e8fc6399e)
 - [Rails Style Guide](https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md)

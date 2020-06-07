@@ -4,6 +4,10 @@
 ```sh
 # in the project root
 rails console
+
+# get model attribute and types
+User.first
+User
 ```
 - **Database**
 ```sh
@@ -86,6 +90,30 @@ create      app/views/accounts/show.json.jbuilder
 create      app/views/accounts/_account.json.jbuilder
 create      app/assets/stylesheets/accounts.scss
 create      app/assets/stylesheets/scaffolds.scss
+```
+
+### Model, Controller and Route
+- `rails g scaffold Foo --api --no-assets --no-helper`
+  - `--api`: no views and fixtures
+  - `--no-stylesheets`: no scss
+  - `--no-assets`: no assets including scss 
+  - `--no-fixture`: no data config files for unit testing
+  - `--no-helper`: no helper for views
+  - `--no-jbuilder`: no json generator by jbuilder
+```sh
+# model
+create    db/migrate/20200607030537_create_foos.rb
+create    app/models/foo.rb
+create    test/models/foo_test.rb
+create    test/fixtures/foos.yml
+# route
+route     resources :foos
+# controller
+create    app/controllers/foos_controller.rb
+create    test/controllers/foos_controller_test.rb
+create    app/views/foos/index.json.jbuilder
+create    app/views/foos/show.json.jbuilder
+create    app/views/foos/_foo.json.jbuilder
 ```
 
 ### Migrations
