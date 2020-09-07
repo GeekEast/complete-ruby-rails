@@ -12,6 +12,7 @@ User
 - **Database**
 ```sh
 # in the project root
+rails db
 rails dbconsole # requirs db password
 ```
 
@@ -44,7 +45,9 @@ end
 - `rails db:migrate`
   - **add_column**: won't delete existing records
   - **remove_column**: won't delete existing records
-- `rails db:rollback`
+- `rails db:rollback`: rollback migrations
+- `rails db:structure:dump`: generate `structure.sql`
+- `rails db:schema:dumo`: generate `schema.rb`
 
 
 ### Model

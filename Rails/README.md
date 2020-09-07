@@ -6,6 +6,10 @@ rails new todolist -T --api --database=postgresql
 
 ## Workflow!
 - **Migration**: Database level tables, relations, validation
+  - **Create**Table: create a table
+  - AddColumn**To**Table: add column
+  - AddTable**To**Table: create **references** (index + FK)
+  - Create**JoinTable**Table1Table2: create **M-M** relations
 - **Model**: API level validation, relations
 - **Controller**: `index`, `show`, `new`, `create`, `edit`, `update`, `delete`
 - **Serializer**: json builder
